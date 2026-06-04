@@ -24,7 +24,6 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import br.com.fiap.coldorbitmedtrack.components.SummaryCard
 import br.com.fiap.coldorbitmedtrack.model.DeliveryBatch
-import br.com.fiap.coldorbitmedtrack.navigation.AppRoutes
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -92,7 +91,7 @@ fun HomeScreen(
             Spacer(modifier = Modifier.height(8.dp))
 
             Button(
-                onClick = { navController.navigate(AppRoutes.DELIVERIES) },
+                onClick = { navController.navigate("deliveries") },
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(44.dp),
@@ -102,7 +101,7 @@ fun HomeScreen(
             }
 
             Button(
-                onClick = { navController.navigate(AppRoutes.ALERTS) },
+                onClick = { navController.navigate("alerts") },
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(44.dp),
@@ -112,7 +111,7 @@ fun HomeScreen(
             }
 
             Button(
-                onClick = { navController.navigate(AppRoutes.PROFILE) },
+                onClick = { navController.navigate("profile") },
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(44.dp),

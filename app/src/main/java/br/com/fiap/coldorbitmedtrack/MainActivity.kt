@@ -11,7 +11,6 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import br.com.fiap.coldorbitmedtrack.navigation.AppRoutes
 import br.com.fiap.coldorbitmedtrack.repository.getMockAlerts
 import br.com.fiap.coldorbitmedtrack.repository.getMockBatches
 import br.com.fiap.coldorbitmedtrack.screens.AlertsScreen
@@ -34,18 +33,18 @@ class MainActivity : ComponentActivity() {
 
                 NavHost(
                     navController = navController,
-                    startDestination = AppRoutes.HOME
+                    startDestination = "home"
                 ) {
-                    composable(AppRoutes.HOME) {
+                    composable("home") {
                         HomeScreen(navController = navController, batches = batches)
                     }
 
-                    composable(AppRoutes.DELIVERIES) {
+                    composable("deliveries") {
                         DeliveriesScreen(navController = navController, batches = batches)
                     }
 
                     composable(
-                        route = AppRoutes.BATCH_DETAIL,
+                        route = "batchDetail/{batchId}",
                         arguments = listOf(navArgument("batchId") { type = NavType.StringType })
                     ) { backStackEntry ->
                         val batchId = backStackEntry.arguments?.getString("batchId")
@@ -54,7 +53,7 @@ class MainActivity : ComponentActivity() {
                     }
 
                     composable(
-                        route = AppRoutes.UPDATE_STATUS,
+                        route = "updateStatus/{batchId}",
                         arguments = listOf(navArgument("batchId") { type = NavType.StringType })
                     ) { backStackEntry ->
                         val batchId = backStackEntry.arguments?.getString("batchId")
@@ -75,11 +74,11 @@ class MainActivity : ComponentActivity() {
                         )
                     }
 
-                    composable(AppRoutes.PROFILE) {
+                    composable("profile") {
                         ProfileScreen(navController = navController)
                     }
 
-                    composable(AppRoutes.ALERTS) {
+                    composable("alerts") {
                         AlertsScreen(
                             navController = navController,
                             alerts = alerts,

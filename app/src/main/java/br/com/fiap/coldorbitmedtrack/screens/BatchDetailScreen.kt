@@ -26,7 +26,6 @@ import androidx.navigation.NavController
 import br.com.fiap.coldorbitmedtrack.components.InfoRow
 import br.com.fiap.coldorbitmedtrack.components.StatusBadge
 import br.com.fiap.coldorbitmedtrack.model.DeliveryBatch
-import br.com.fiap.coldorbitmedtrack.navigation.AppRoutes
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -94,7 +93,7 @@ fun BatchDetailScreen(
             }
 
             Button(
-                onClick = { navController.navigate(AppRoutes.updateStatus(batch.id)) },
+                onClick = { navController.navigate("updateStatus/${batch.id}") },
                 modifier = Modifier.fillMaxWidth()
             ) {
                 Text("Atualizar status")

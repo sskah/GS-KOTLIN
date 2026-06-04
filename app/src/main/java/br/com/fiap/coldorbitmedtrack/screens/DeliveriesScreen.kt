@@ -34,7 +34,6 @@ import androidx.navigation.NavController
 import br.com.fiap.coldorbitmedtrack.components.InfoRow
 import br.com.fiap.coldorbitmedtrack.components.StatusBadge
 import br.com.fiap.coldorbitmedtrack.model.DeliveryBatch
-import br.com.fiap.coldorbitmedtrack.navigation.AppRoutes
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -76,7 +75,7 @@ fun DeliveriesScreen(
             LazyColumn(verticalArrangement = Arrangement.spacedBy(12.dp)) {
                 items(filteredBatches) { batch ->
                     DeliveryBatchCard(batch = batch) {
-                        navController.navigate(AppRoutes.batchDetail(batch.id))
+                        navController.navigate("batchDetail/${batch.id}")
                     }
                 }
             }
