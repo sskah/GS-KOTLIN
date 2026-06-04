@@ -4,9 +4,9 @@
 
 RM: 558810     -    Karine Nascimento Honório da Silva
 
-RM: 558539     -    Lucas Bel Correa
+RM: 558539     -    Lucas Almeida Bel Correa
 
-RM: 555377     -    Lucas Rodrigues
+RM: 555377     -    Lucas Rodrigues Alves
 
 ---
 
