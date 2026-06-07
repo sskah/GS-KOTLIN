@@ -210,9 +210,9 @@ A tela inicial conecta o operador às áreas principais do app. Ela resume o est
 
 **Prints da HomeScreen:**
 
-![Print da HomeScreen - Resumo operacional](kotlin-prints/kotlin-home-1.png)
+![HomeScreen - Resumo operacional](kotlin-prints/kotlin-home-1.png)
 
-![Print da HomeScreen - Ações principais](kotlin-prints/kotlin-home-2.png)
+![HomeScreen - Ações principais](kotlin-prints/kotlin-home-2.png)
 
 ---
 
@@ -235,7 +235,7 @@ Essa tela representa a rotina principal do operador: acompanhar os lotes sob sua
 
 **Print da DeliveriesScreen:**
 
-![Print da DeliveriesScreen](kotlin-prints/kotlin-entregas.png)
+![DeliveriesScreen](kotlin-prints/kotlin-entregas.png)
 
 ---
 
@@ -263,7 +263,7 @@ Essa tela conecta a consulta de entregas com a ação de campo. Depois de analis
 
 **Print da BatchDetailScreen:**
 
-![Print da BatchDetailScreen](kotlin-prints/kotlin-detalhes.png)
+![BatchDetailScreen](kotlin-prints/kotlin-detalhes.png)
 
 ---
 
@@ -286,7 +286,7 @@ A tela atualiza os dados mockados mantidos na `MainActivity`. Isso permite que o
 
 **Print da UpdateStatusScreen:**
 
-![Print da UpdateStatusScreen](kotlin-prints/kotlin-atualizar-lote.png)
+![UpdateStatusScreen](kotlin-prints/kotlin-atualizar-lote.png)
 
 ---
 
@@ -309,7 +309,7 @@ Essa tela reforça a função operacional do app. Além de consultar entregas, o
 
 **Print da AlertsScreen:**
 
-![Print da AlertsScreen](kotlin-prints/kotlin-alertas.png)
+![AlertsScreen](kotlin-prints/kotlin-alertas.png)
 
 ---
 
@@ -334,7 +334,7 @@ Essa tela ajuda a contextualizar quem está executando as ações dentro do app.
 
 **Print da ProfileScreen:**
 
-![Print da ProfileScreen](kotlin-prints/kotlin-perfil.png)
+![ProfileScreen](kotlin-prints/kotlin-perfil.png)
 
 ---
 
